@@ -8,5 +8,6 @@ a [Sails](http://sailsjs.org) application
 
 1. 如何用HTML(assisted with angularjs)而不用JADE/EJS - 把config/routes.js中view部分去掉，这样sailsjs就会serve index.html
 2. sailsjs自带的socketio是在/assets/js/dependencies下面
-3. .watch和.publishCreate的使用
-4. angularjs中filter的使用(ng-repeat="chat in chatList | orderBy:predicate:reverse | limitTo: 15")
+3. server code中.watch和.publishCreate的使用
+4. client code中io.socket.on(‘modelname’,function())的使用，modelname是由publishCreate()自动发送的
+5. angularjs中filter的使用(ng-repeat="chat in chatList | orderBy:predicate:reverse | limitTo: 15")
